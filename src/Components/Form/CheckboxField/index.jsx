@@ -29,7 +29,9 @@ const CheckboxField = (props) => {
                   checked={field.value.includes(option.value)}
                 />
 
-                <label htmlFor={option.value}>{option.key}</label>
+                <label data-type="checkbox-label" htmlFor={option.value}>
+                  {option.key}
+                </label>
               </React.Fragment>
             );
           });

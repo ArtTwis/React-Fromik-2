@@ -4,6 +4,7 @@ import DateView from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import TextError from "../../TextError";
 import CalenderIcon from "../../../assets/calender.png";
+import { CalendarIcon } from "@chakra-ui/icons";
 
 const DatePickerField = (props) => {
   const { label, name, required, ...rest } = props;
@@ -35,7 +36,7 @@ const DatePickerField = (props) => {
               closeOnScroll={true}
               showWeekNumbers
               showIcon
-              icon={CalenderIcon}
+              icon={<CalendarIcon color={"darkgreen"} />}
             />
           );
         }}

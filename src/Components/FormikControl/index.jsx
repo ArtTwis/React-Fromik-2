@@ -5,6 +5,7 @@ import SelectField from "../Form/SelectField";
 import RadioField from "../Form/RadioField";
 import CheckboxField from "../Form/CheckboxField";
 import DatePickerField from "../Form/DatePickerField";
+import ChakraInputField from "../Form/ChakraInputField";
 
 const FormikControl = (props) => {
   const { control, ...rest } = props;
@@ -12,6 +13,8 @@ const FormikControl = (props) => {
   switch (control) {
     case "input":
       return <InputField {...rest} />;
+    case "chakraInput":
+      return <ChakraInputField {...rest} />;
     case "textarea":
       return <TextareaField {...rest} />;
     case "select":

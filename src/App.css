@@ -29,7 +29,11 @@ label[data-required] {
 input + label {
   font-weight: 500;
   display: inline-flex;
-  margin-right: 20px;
+  margin-right: 25px;
+}
+
+label[data-type="checkbox-label"] {
+  margin-left: 0.5rem;
 }
 
 input[type="text"],
@@ -47,7 +51,7 @@ select {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 }
 
 .form-control {
